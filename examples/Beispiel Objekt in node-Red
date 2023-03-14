@@ -1,0 +1,30 @@
+Message 1:
+Lageänderung von 1 nach 2:
+
+{   "end_device_ids":{"device_id":"fds-trx","application_ids":{"application_id":"fdstest"},"dev_eui":"7066E1FFFE000BF4","join_eui":"7066E1FFFE000BF5","dev_addr":"260B78C8"},
+    "correlation_ids":["as:up:01GVDEGVQC63GDBNM49VABC59V","gs:conn:01GVDBEADNMHJM4SD9H7J9KVXC","gs:up:host:01GVDBEADS1R2WD441395X72DY","gs:uplink:01GVDEGVGWP6Y1V0A1KEN8AD7B","ns:uplink:01GVDEGVGXNM2KN41AM6K7WM93","rpc:/ttn.lorawan.v3.GsNs/HandleUplink:01GVDEGVGXRWEG1JYHPE6WKH14","rpc:/ttn.lorawan.v3.NsAs/HandleUplink:01GVDEGVQCJ9PCYAKWADB8H10S"],
+    "received_at":"2023-03-13T12:18:31.276636130Z",
+    "uplink_message":{
+        "session_key_id":"AYba54A3vSNEtWrA/Yyr3w==",
+        "f_port":10,
+        "f_cnt":2,
+        "frm_payload":"AgAAAvIMA1s=",
+        "decoded_payload":{"Acceleration":"True","In_Motion":"False","Supply_Voltage":754,"TX_Reason":"Input_Event","Tilt_Angle":91,"Tilt_Area_0":"True","Tilt_Area_1":"False","Tilt_Area_2":"False"},
+        "rx_metadata":[{"gateway_ids":{"gateway_id":"lrabb-00045","eui":"7276FF000B0325CD"},"time":"2023-03-13T12:18:30.672381Z","timestamp":1701496028,"rssi":-116,"channel_rssi":-116,"snr":4.2,"location":{"latitude":48.80268679243485,"longitude":9.00376596693259,"altitude":450,"source":"SOURCE_REGISTRY"},"uplink_token":"ChkKFwoLbHJhYmItMDAwNDUSCHJ2/wALAyXNENyJq6sGGgsIl6m8oAYQsuWrICDg9sPIwq4B","channel_index":1,"received_at":"2023-03-13T12:18:28.951488681Z"}],
+        "settings":{"data_rate":{"lora":{"bandwidth":125000,"spreading_factor":12,"coding_rate":"4/5"}},"frequency":"867300000","timestamp":1701496028,"time":"2023-03-13T12:18:30.672381Z"},"received_at":"2023-03-13T12:18:31.069535968Z","consumed_airtime":"1.482752s","locations":{"user":{"latitude":48.793991322044846,"longitude":9.0156223418006,"source":"SOURCE_REGISTRY"}},"network_ids":{"net_id":"000013","tenant_id":"ttn","cluster_id":"eu1","cluster_address":"eu1.cloud.thethings.network"}
+    }
+}
+
+Pfad: payload.uplink_message.decoded_payload
+{"Acceleration":"True","In_Motion":"False","Supply_Voltage":754,"TX_Reason":"Input_Event",
+"Tilt_Angle":91,"Tilt_Area_0":"True","Tilt_Area_1":"False","Tilt_Area_2":"False"}
+
+
+Message 2:
+Lageänderung von 2 nach 1:
+
+{"end_device_ids":{"device_id":"fds-trx","application_ids":{"application_id":"fdstest"},"dev_eui":"7066E1FFFE000BF4","join_eui":"7066E1FFFE000BF5","dev_addr":"260B78C8"},"correlation_ids":["as:up:01GVDEHXGD0TQBZ7NFQQF5EPDS","gs:conn:01GVDC9B298YVH7G2WY99M62GB","gs:up:host:01GVDC9B2D5T9AVXS5DV0ZFFDK","gs:uplink:01GVDEHXA0GJEVQ3R2257EPKH2","ns:uplink:01GVDEHXA0ED39E2QKPVGXV2ZR","rpc:/ttn.lorawan.v3.GsNs/HandleUplink:01GVDEHXA08DF5BWB0Y7RX7QZ0","rpc:/ttn.lorawan.v3.NsAs/HandleUplink:01GVDEHXGCQPMEDS7JKB7AY622"],"received_at":"2023-03-13T12:19:05.869025088Z","uplink_message":{"session_key_id":"AYba54A3vSNEtWrA/Yyr3w==","f_port":10,"f_cnt":3,"frm_payload":"AgAAAvIMCQE=","decoded_payload":{"Acceleration":"True","In_Motion":"False","Supply_Voltage":754,"TX_Reason":"Input_Event","Tilt_Angle":1,"Tilt_Area_0":"False","Tilt_Area_1":"False","Tilt_Area_2":"True"},"rx_metadata":[{"gateway_ids":{"gateway_id":"lrabb-engelbergturm","eui":"7276FF000B0322D8"},"time":"2023-03-13T12:19:05.379Z","timestamp":2037097196,"rssi":-103,"channel_rssi":-103,"snr":-14.5,"uplink_token":"CiEKHwoTbHJhYmItZW5nZWxiZXJndHVybRIIcnb/AAsDItgQ7MWuywcaDAi5qbygBhCN3d+8AiDg09HjpLgBKgwIuam8oAYQwKnctAE=","channel_index":6,"gps_time":"2023-03-13T12:19:05.379Z","received_at":"2023-03-13T12:19:03.494182401Z"}],"settings":{"data_rate":{"lora":{"bandwidth":125000,"spreading_factor":12,"coding_rate":"4/5"}},"frequency":"868300000","timestamp":2037097196,"time":"2023-03-13T12:19:05.379Z"},"received_at":"2023-03-13T12:19:05.664953519Z","consumed_airtime":"1.482752s","locations":{"user":{"latitude":48.793991322044846,"longitude":9.0156223418006,"source":"SOURCE_REGISTRY"}},"network_ids":{"net_id":"000013","tenant_id":"ttn","cluster_id":"eu1","cluster_address":"eu1.cloud.thethings.network"}}}
+
+Pfad: payload.uplink_message.decoded_payload
+{"Acceleration":"True","In_Motion":"False","Supply_Voltage":754,"TX_Reason":"Input_Event",
+"Tilt_Angle":1,"Tilt_Area_0":"False","Tilt_Area_1":"False","Tilt_Area_2":"True"}

@@ -1,0 +1,35 @@
+
+Bitte zum Flashen neuer Firmware auf die LoRIS-Base in folgender Reihenfolge vorgehen:
+
+1. Installation des Flasher-Tools mit der Datei "Setup_LoRIS-Base_Flasher_Tool.exe". Hierzu werden Administrator-Rechte benötigt. Bei Windows muss hierbei mit einem Rechtsklick auf die Datei "Setup_LoRIS-Base_Flasher_Tool.exe" "Als Administrator ausführen" ausgewählt werden.
+
+2. LoRIS-Base Flasher Tool starten.
+
+3. Herunterladen und Entpacken der Firmware-Datei (.hex-Datei) von der Artikel-Seite des Applikationsmoduls im ELVshop (de.elv.com).
+
+4. Drücken und Festhalten des User-Buttons an der LoRIS-Base
+
+5. Anschluss des USB-Kabels an die LoRIS-Base
+
+6. User-Button loslassen
+
+7. Auf das Refresh-Symbol klicken, um die Liste der COM-Ports zu aktualisieren
+
+8. COM-Port auswählen, an dem die LoRIS-Base angeschlossen ist.
+ 
+9. "Connect" drücken - bei erfolgreicher Verbindung werden die DevEUI, JoinEUI und der AppKey angezeigt
+
+10. Mit "Open" Auswahl der entsprechenden Firmware-Datei für das verwendete Applikationsmodul - die ausgewählte Firmware-Datei wird danach unter "Open" angezeigt
+
+11. Flashen der Firmware mit "Flash" - auf keinen Fall das USB-Kabel während des Flash-Vorgangs von der LoRIS-Base abziehen!
+
+12. Nach erfolgreichem Flash-Vorgang (grüner Haken) auf "Disconnect" klicken
+
+13. USB-Kabel abziehen - LoRIS-Base Flasher Tool beenden
+
+14. Applikationsmodul auf die LoRIS-Base aufstecken
+
+15. Die LoRIS-Base wieder mit dem USB-Kabel verbinden, die neue Firmware ist nun aufgespielt und kann mit dem entsprechenden Applikationsmodul verwendet werden 
+
+Troubleshooting:
+Wird beim Anschließen des USB-Kabels an der LoRIS-Base der User-Button nicht gedrückt, kann keine Verbindung aufgebaut und die Firmware nicht geflasht werden. Es erscheint die Fehlermeldung "The COM port connection could not be established".
